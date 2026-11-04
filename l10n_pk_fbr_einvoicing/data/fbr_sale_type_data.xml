@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="fbr_sale_type_sn001" model="fbr.sale.type">
+            <field name="scenario_id">SN001</field>
+            <field name="name">Goods at standard rate (default) - Registered Buyer</field>
+        </record>
+        <record id="fbr_sale_type_sn002" model="fbr.sale.type">
+            <field name="scenario_id">SN002</field>
+            <field name="name">Goods at standard rate (default) - Unregistered Buyer</field>
+        </record>
+        <record id="fbr_sale_type_sn003" model="fbr.sale.type">
+            <field name="scenario_id">SN003</field>
+            <field name="name">Steel melting and re-rolling</field>
+        </record>
+        <record id="fbr_sale_type_sn004" model="fbr.sale.type">
+            <field name="scenario_id">SN004</field>
+            <field name="name">Ship breaking</field>
+        </record>
+        <record id="fbr_sale_type_sn005" model="fbr.sale.type">
+            <field name="scenario_id">SN005</field>
+            <field name="name">Goods at Reduced Rate</field>
+        </record>
+        <record id="fbr_sale_type_sn006" model="fbr.sale.type">
+            <field name="scenario_id">SN006</field>
+            <field name="name">Exempt goods</field>
+        </record>
+        <record id="fbr_sale_type_sn007" model="fbr.sale.type">
+            <field name="scenario_id">SN007</field>
+            <field name="name">Goods at zero-rate</field>
+        </record>
+        <record id="fbr_sale_type_sn008" model="fbr.sale.type">
+            <field name="scenario_id">SN008</field>
+            <field name="name">3rd Schedule Goods</field>
+        </record>
+        <record id="fbr_sale_type_sn009" model="fbr.sale.type">
+            <field name="scenario_id">SN009</field>
+            <field name="name">Cotton ginners</field>
+        </record>
+        <record id="fbr_sale_type_sn010" model="fbr.sale.type">
+            <field name="scenario_id">SN010</field>
+            <field name="name">Telecommunication services</field>
+        </record>
+        <record id="fbr_sale_type_sn011" model="fbr.sale.type">
+            <field name="scenario_id">SN011</field>
+            <field name="name">Toll Manufacturing</field>
+        </record>
+        <record id="fbr_sale_type_sn012" model="fbr.sale.type">
+            <field name="scenario_id">SN012</field>
+            <field name="name">Petroleum Products</field>
+        </record>
+        <record id="fbr_sale_type_sn013" model="fbr.sale.type">
+            <field name="scenario_id">SN013</field>
+            <field name="name">Electricity Supply to Retailers</field>
+        </record>
+        <record id="fbr_sale_type_sn014" model="fbr.sale.type">
+            <field name="scenario_id">SN014</field>
+            <field name="name">Gas to CNG stations</field>
+        </record>
+        <record id="fbr_sale_type_sn015" model="fbr.sale.type">
+            <field name="scenario_id">SN015</field>
+            <field name="name">Mobile Phones</field>
+        </record>
+        <record id="fbr_sale_type_sn016" model="fbr.sale.type">
+            <field name="scenario_id">SN016</field>
+            <field name="name">Processing/Conversion of Goods</field>
+        </record>
+        <record id="fbr_sale_type_sn017" model="fbr.sale.type">
+            <field name="scenario_id">SN017</field>
+            <field name="name">Goods (FED in ST Mode)</field>
+        </record>
+        <record id="fbr_sale_type_sn018" model="fbr.sale.type">
+            <field name="scenario_id">SN018</field>
+            <field name="name">Services (FED in ST Mode)</field>
+        </record>
+        <record id="fbr_sale_type_sn019" model="fbr.sale.type">
+            <field name="scenario_id">SN019</field>
+            <field name="name">Services</field>
+        </record>
+        <record id="fbr_sale_type_sn020" model="fbr.sale.type">
+            <field name="scenario_id">SN020</field>
+            <field name="name">Electric Vehicle</field>
+        </record>
+        <record id="fbr_sale_type_sn021" model="fbr.sale.type">
+            <field name="scenario_id">SN021</field>
+            <field name="name">Cement /Concrete Block</field>
+        </record>
+        <record id="fbr_sale_type_sn022" model="fbr.sale.type">
+            <field name="scenario_id">SN022</field>
+            <field name="name">Potassium Chlorate</field>
+        </record>
+        <record id="fbr_sale_type_sn023" model="fbr.sale.type">
+            <field name="scenario_id">SN023</field>
+            <field name="name">CNG Sales</field>
+        </record>
+        <record id="fbr_sale_type_sn024" model="fbr.sale.type">
+            <field name="scenario_id">SN024</field>
+            <field name="name">Goods as per SRO.297(I)/2023</field>
+        </record>
+        <record id="fbr_sale_type_sn025" model="fbr.sale.type">
+            <field name="scenario_id">SN025</field>
+            <field name="name">Non-Adjustable Supplies</field>
+        </record>
+        <record id="fbr_sale_type_sn026" model="fbr.sale.type">
+            <field name="scenario_id">SN026</field>
+            <field name="name">Goods at standard rate (default) - End Consumer</field>
+        </record>
+        <record id="fbr_sale_type_sn027" model="fbr.sale.type">
+            <field name="scenario_id">SN027</field>
+            <field name="name">3rd Schedule Goods - End Consumer</field>
+        </record>
+        <record id="fbr_sale_type_sn028" model="fbr.sale.type">
+            <field name="scenario_id">SN028</field>
+            <field name="name">Goods at Reduced Rate - End Consumer</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_queue_list" model="ir.ui.view">
+        <field name="name">fbr.queue.list</field>
+        <field name="model">fbr.queue</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="status == 'failed'" decoration-info="status == 'processing'" create="false">
+                <field name="authority"/>
+                <field name="res_model"/>
+                <field name="res_id"/>
+                <field name="status"/>
+                <field name="retry_count"/>
+                <field name="remaining_retries"/>
+                <field name="next_retry_at"/>
+                <field name="error_message" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_fbr_queue_search" model="ir.ui.view">
+        <field name="name">fbr.queue.search</field>
+        <field name="model">fbr.queue</field>
+        <field name="arch" type="xml">
+            <search>
+                <filter name="pending" string="Pending" domain="[('status', '=', 'pending')]"/>
+                <filter name="processing" string="Processing" domain="[('status', '=', 'processing')]"/>
+                <filter name="failed" string="Failed" domain="[('status', '=', 'failed')]"/>
+                <filter name="fbr" string="FBR" domain="[('authority', '=', 'fbr')]"/>
+                <filter name="pra" string="PRA" domain="[('authority', '=', 'pra')]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_authority" string="Authority" context="{'group_by': 'authority'}"/>
+                    <filter name="group_status" string="Status" context="{'group_by': 'status'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_fbr_queue" model="ir.actions.act_window">
+        <field name="name">FBR/PRA Queue</field>
+        <field name="res_model">fbr.queue</field>
+        <field name="view_mode">list</field>
+        <field name="context">{'search_default_pending': 1, 'search_default_failed': 1, 'search_default_processing': 1}</field>
+    </record>
+</odoo>

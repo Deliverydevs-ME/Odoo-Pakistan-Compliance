@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fbr_sale_type_user,fbr.sale.type.user,model_fbr_sale_type,group_pakistan_compliance_user,1,0,0,0
+access_fbr_sale_type_manager,fbr.sale.type.manager,model_fbr_sale_type,group_pakistan_compliance_manager,1,1,1,1
+access_fbr_queue_user,fbr.queue.user,model_fbr_queue,group_pakistan_compliance_user,1,0,0,0
+access_fbr_queue_manager,fbr.queue.manager,model_fbr_queue,group_pakistan_compliance_manager,1,1,1,1
+access_fbr_log_user,fbr.log.user,model_fbr_log,group_pakistan_compliance_user,1,0,0,0
+access_fbr_log_manager,fbr.log.manager,model_fbr_log,group_pakistan_compliance_manager,1,1,0,0
+access_pra_pct_code_user,pra.pct.code.user,model_pra_pct_code,group_pakistan_compliance_user,1,0,0,0
+access_pra_pct_code_manager,pra.pct.code.manager,model_pra_pct_code,group_pakistan_compliance_manager,1,1,1,1

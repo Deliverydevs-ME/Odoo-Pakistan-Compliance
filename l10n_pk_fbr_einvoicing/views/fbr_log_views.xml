@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_log_list" model="ir.ui.view">
+        <field name="name">fbr.log.list</field>
+        <field name="model">fbr.log</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="status in ('invalid', 'error', 'timeout')" decoration-success="status == 'success'" create="false" edit="false">
+                <field name="authority"/>
+                <field name="res_model"/>
+                <field name="res_id"/>
+                <field name="document_invoice_number"/>
+                <field name="status"/>
+                <field name="submitted_at"/>
+                <field name="processing_time_ms"/>
+                <field name="retry_attempt"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_fbr_log_form" model="ir.ui.view">
+        <field name="name">fbr.log.form</field>
+        <field name="model">fbr.log</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="authority"/>
+                            <field name="res_model"/>
+                            <field name="res_id"/>
+                            <field name="document_invoice_number"/>
+                            <field name="status"/>
+                            <field name="submitted_at"/>
+                            <field name="processing_time_ms"/>
+                            <field name="response_status_code"/>
+                            <field name="retry_attempt"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Request Payload">
+                            <field name="request_payload" widget="text"/>
+                        </page>
+                        <page string="Response Data">
+                            <field name="response_data" widget="text"/>
+                        </page>
+                        <page string="Validation Errors">
+                            <field name="validation_errors" widget="text"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_fbr_log_search" model="ir.ui.view">
+        <field name="name">fbr.log.search</field>
+        <field name="model">fbr.log</field>
+        <field name="arch" type="xml">
+            <search>
+                <filter name="fbr" string="FBR" domain="[('authority', '=', 'fbr')]"/>
+                <filter name="pra" string="PRA" domain="[('authority', '=', 'pra')]"/>
+                <filter name="success" string="Success" domain="[('status', '=', 'success')]"/>
+                <filter name="failed" string="Invalid/Error" domain="[('status', 'in', ('invalid', 'error', 'timeout'))]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_authority" string="Authority" context="{'group_by': 'authority'}"/>
+                    <filter name="group_status" string="Status" context="{'group_by': 'status'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_fbr_log" model="ir.actions.act_window">
+        <field name="name">FBR/PRA Submission Logs</field>
+        <field name="res_model">fbr.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

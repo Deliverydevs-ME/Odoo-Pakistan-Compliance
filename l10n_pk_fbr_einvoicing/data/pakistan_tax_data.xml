@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Placeholder: province tax categories / fiscal positions are created
+         programmatically by res.company._setup_pakistan_tax_accounts_and_templates()
+         (post_init_hook + the "Setup Pakistan Tax Accounts" button), not via
+         static data records, since they must be created per-company and are
+         derived from data/pakistan_tax_reference.py. -->
+</odoo>

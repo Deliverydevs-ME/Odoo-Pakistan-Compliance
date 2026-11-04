@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_pakistan_compliance" model="ir.ui.view">
+        <field name="name">res.company.form.pakistan.compliance</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="FBR" name="fbr_compliance">
+                    <group>
+                        <group string="Configuration">
+                            <field name="fbr_enabled"/>
+                            <field name="fbr_mode"/>
+                            <field name="fbr_api_endpoint"/>
+                            <field name="fbr_authorization_token" password="True"/>
+                            <field name="fbr_province_id"/>
+                        </group>
+                        <group string="Status">
+                            <field name="fbr_stats_html" nolabel="1"/>
+                            <button name="action_check_fbr_api_status" type="object"
+                                    string="Check FBR API Status" class="btn-secondary"/>
+                            <button name="action_setup_pakistan_tax_accounts" type="object"
+                                    string="Setup Pakistan Tax Accounts" class="btn-secondary"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="ePRA" name="pra_compliance">
+                    <group>
+                        <group string="Configuration">
+                            <field name="pra_enabled"/>
+                            <field name="pra_mode"/>
+                            <field name="pra_pos_id"/>
+                            <field name="pra_access_token" password="True"/>
+                            <field name="pra_province_id"/>
+                        </group>
+                        <group string="PCT Code Master Data">
+                            <button name="action_sync_pra_pct_codes" type="object"
+                                    string="Sync PCT Codes from FBR" class="btn-secondary"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

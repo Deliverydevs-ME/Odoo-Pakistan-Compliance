@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_fbr_sales_invoice" model="ir.actions.report">
+        <field name="name">FBR Sales Invoice</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_pk_fbr_einvoicing.report_fbr_sales_invoice_document</field>
+        <field name="report_file">l10n_pk_fbr_einvoicing.report_fbr_sales_invoice_document</field>
+        <field name="print_report_name">'FBR Sales Invoice - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_fbr_sales_invoice_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs.sudo()" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>SALES TAX INVOICE (FBR Digital Invoice)</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Seller:</strong>
+                                <p t-field="o.company_id.name"/>
+                                <p t-field="o.company_id.vat"/>
+                                <p t-field="o.company_id.fbr_province_id.name"/>
+                            </div>
+                            <div class="col-6 text-end">
+                                <strong>Buyer:</strong>
+                                <p t-field="o.partner_id.name"/>
+                                <p t-field="o.partner_id.fbr_ntn"/>
+                                <p t-field="o.partner_id.fbr_province_id.name"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Invoice No:</strong> <span t-field="o.name"/>
+                            </div>
+                            <div class="col-6 text-end">
+                                <strong>Date:</strong> <span t-field="o.invoice_date"/>
+                            </div>
+                        </div>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>HS Code</th>
+                                    <th class="text-end">Qty</th>
+                                    <th class="text-end">Price</th>
+                                    <th class="text-end">Value Excl. Tax</th>
+                                    <th class="text-end">Tax Rate</th>
+                                    <th class="text-end">Tax Amount</th>
+                                    <th class="text-end">Value Incl. Tax</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.invoice_line_ids.filtered(lambda l: l.display_type == 'product')" t-as="line">
+                                    <td><span t-field="line.name"/></td>
+                                    <td><span t-field="line.fbr_hs_code"/></td>
+                                    <td class="text-end"><span t-field="line.quantity"/></td>
+                                    <td class="text-end"><span t-field="line.price_unit"/></td>
+                                    <td class="text-end"><span t-field="line.price_subtotal"/></td>
+                                    <td class="text-end"><span t-field="line.fbr_tax_rate"/>%</td>
+                                    <td class="text-end"><span t-field="line.fbr_tax_amount"/></td>
+                                    <td class="text-end"><span t-esc="line.price_subtotal + line.fbr_tax_amount"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div t-if="o.fbr_invoice_number and o.fbr_datetime and o.fbr_status">
+                            <strong>FBR Invoice No:</strong> <span t-field="o.fbr_invoice_number"/><br/>
+                            <strong>FBR Status:</strong> <span t-field="o.fbr_status"/><br/>
+                            <strong>FBR Datetime:</strong> <span t-field="o.fbr_datetime"/>
+                            <div t-field="o.fbr_invoice_number"
+                                 t-options="{'widget': 'barcode', 'symbology': 'QR', 'width': 120, 'height': 120}"/>
+                        </div>
+                        <div t-else="">
+                            <p class="text-muted"><em>Not yet submitted to FBR -- no QR/IRN to display.</em></p>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_template_form_pakistan_compliance" model="ir.ui.view">
+        <field name="name">product.template.form.pakistan.compliance</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="FBR / PRA" name="fbr_pra_compliance">
+                    <group>
+                        <field name="fbr_hs_code"/>
+                        <field name="fbr_sale_type_id"/>
+                        <field name="pra_pct_code_id"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

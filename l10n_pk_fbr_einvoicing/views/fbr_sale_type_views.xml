@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_sale_type_list" model="ir.ui.view">
+        <field name="name">fbr.sale.type.list</field>
+        <field name="model">fbr.sale.type</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="scenario_id"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_fbr_sale_type" model="ir.actions.act_window">
+        <field name="name">FBR Sale Types</field>
+        <field name="res_model">fbr.sale.type</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>
