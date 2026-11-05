@@ -3,7 +3,7 @@ import logging
 
 import requests
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 _logger = logging.getLogger(__name__)
 
@@ -14,7 +14,13 @@ class PraPctCode(models.Model):
     _name = "pra.pct.code"
     _description = "PRA PCT Code (Pakistan Customs Tariff)"
     _order = "code_number"
-    _rec_name = "display_name"
+    # Must be the real stored field, not the computed display_name below --
+    # Many2one quick-create (typing a code directly and hitting "Create")
+    # writes to _rec_name via name_create(), and a field computed FROM
+    # code_number can't be the target of that write (the compute would just
+    # overwrite it back to empty immediately after, since code_number itself
+    # was never actually set -- this was shipping "Unnamed" records).
+    _rec_name = "code_number"
 
     code_number = fields.Char(required=True, index=True)
     description = fields.Text()
@@ -24,6 +30,7 @@ class PraPctCode(models.Model):
         ("code_number_uniq", "unique(code_number)", "PCT Code must be unique."),
     ]
 
+    @api.depends("code_number", "description")
     def _compute_display_name(self):
         for rec in self:
             desc = (rec.description or "")[:60]
