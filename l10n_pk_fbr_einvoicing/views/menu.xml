@@ -2,6 +2,7 @@
 <odoo>
     <menuitem id="menu_pakistan_compliance_root"
               name="Pakistan Compliance"
+              web_icon="l10n_pk_fbr_einvoicing,static/description/icon.png"
               sequence="90"
               groups="l10n_pk_fbr_einvoicing.group_pakistan_compliance_user"/>
 
