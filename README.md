@@ -34,10 +34,10 @@ for provinces instead of a custom master list).
 
 ```bash
 # Copy (or clone) this module into your Odoo addons path
-cp -r l10n_pk_fbr_einvoicing /path/to/custom-addons/
+cp -r pk_fbr_pra_e_invoicing /path/to/custom-addons/
 
 # Install — depends on account, l10n_pk, and point_of_sale
-odoo -d <your-database> -i l10n_pk_fbr_einvoicing --stop-after-init
+odoo -d <your-database> -i pk_fbr_pra_e_invoicing --stop-after-init
 ```
 
 After install, configure each Pakistani company under
