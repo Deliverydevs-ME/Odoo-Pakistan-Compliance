@@ -37,7 +37,7 @@ class ResCompany(models.Model):
     )
     fbr_authorization_token = fields.Char(
         string="FBR Authorization Token",
-        groups="l10n_pk_fbr_einvoicing.group_pakistan_compliance_manager",
+        groups="pk_fbr_pra_e_invoicing.group_pakistan_compliance_manager",
     )
     fbr_province_id = fields.Many2one(
         "res.country.state",
@@ -64,7 +64,7 @@ class ResCompany(models.Model):
     )
     pra_access_token = fields.Char(
         string="PRA Access Token",
-        groups="l10n_pk_fbr_einvoicing.group_pakistan_compliance_manager",
+        groups="pk_fbr_pra_e_invoicing.group_pakistan_compliance_manager",
         help="Bearer token for the PRA IMS API. Leave blank in Sandbox mode to use "
         "the shared sandbox token from PRA's manual; required in Production "
         "(unique per POS ID, found on the POS Details tab).",

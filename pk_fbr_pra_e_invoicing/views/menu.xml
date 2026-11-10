@@ -2,9 +2,9 @@
 <odoo>
     <menuitem id="menu_pakistan_compliance_root"
               name="Pakistan Compliance"
-              web_icon="l10n_pk_fbr_einvoicing,static/description/icon.png"
+              web_icon="pk_fbr_pra_e_invoicing,static/description/icon.png"
               sequence="90"
-              groups="l10n_pk_fbr_einvoicing.group_pakistan_compliance_user"/>
+              groups="pk_fbr_pra_e_invoicing.group_pakistan_compliance_user"/>
 
     <menuitem id="menu_fbr_queue" name="FBR/PRA Queue"
               parent="menu_pakistan_compliance_root"
@@ -17,10 +17,10 @@
     <menuitem id="menu_fbr_sale_type" name="FBR Sale Types"
               parent="menu_pakistan_compliance_root"
               action="action_fbr_sale_type" sequence="30"
-              groups="l10n_pk_fbr_einvoicing.group_pakistan_compliance_manager"/>
+              groups="pk_fbr_pra_e_invoicing.group_pakistan_compliance_manager"/>
 
     <menuitem id="menu_pra_pct_code" name="PRA PCT Codes"
               parent="menu_pakistan_compliance_root"
               action="action_pra_pct_code" sequence="40"
-              groups="l10n_pk_fbr_einvoicing.group_pakistan_compliance_manager"/>
+              groups="pk_fbr_pra_e_invoicing.group_pakistan_compliance_manager"/>
 </odoo>

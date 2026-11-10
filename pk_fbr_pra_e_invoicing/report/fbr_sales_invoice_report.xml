@@ -4,8 +4,8 @@
         <field name="name">FBR Sales Invoice</field>
         <field name="model">account.move</field>
         <field name="report_type">qweb-pdf</field>
-        <field name="report_name">l10n_pk_fbr_einvoicing.report_fbr_sales_invoice_document</field>
-        <field name="report_file">l10n_pk_fbr_einvoicing.report_fbr_sales_invoice_document</field>
+        <field name="report_name">pk_fbr_pra_e_invoicing.report_fbr_sales_invoice_document</field>
+        <field name="report_file">pk_fbr_pra_e_invoicing.report_fbr_sales_invoice_document</field>
         <field name="print_report_name">'FBR Sales Invoice - %s' % (object.name)</field>
         <field name="binding_model_id" ref="account.model_account_move"/>
         <field name="binding_type">report</field>

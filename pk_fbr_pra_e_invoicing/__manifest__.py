@@ -42,5 +42,5 @@ Ported from the ERPNext "Pak Compliance" app (fbr_e_invoicing).
     "post_init_hook": "post_init_hook",
     "installable": True,
     "application": True,
-    "icon": "/l10n_pk_fbr_einvoicing/static/description/icon.png",
+    "icon": "/pk_fbr_pra_e_invoicing/static/description/icon.png",
 }
