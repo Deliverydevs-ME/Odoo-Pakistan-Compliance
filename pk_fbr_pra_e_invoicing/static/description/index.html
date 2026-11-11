@@ -16,7 +16,7 @@
                 Pakistan Compliance
             </h1>
             <p style="font-size: 1.3rem; max-width: 900px; margin: 0 auto; color: #b6c2cf; font-weight: 300; line-height: 1.6;">
-                Submit Customer Invoices and Point of Sale invoices to Pakistan's FBR (Federal Board of Revenue) digital invoicing API and the PRA (Punjab Revenue Authority) IMS, directly from Odoo &mdash; with per-company configuration, full pre-submission validation, and a reliable automatic retry queue.
+                Submit Customer Invoices and Point of Sale invoices to Pakistan's FBR (Federal Board of Revenue) digital invoicing API and the PRA (Punjab Revenue Authority) IMS, directly from Odoo  with per-company configuration, full pre-submission validation, and a reliable automatic retry queue.
             </p>
             <div style="margin-top: 2.5rem;">
                 <span style="display: inline-block; width: 60px; height: 3px; background-color: #81BD41; border-radius: 2px;"></span>
@@ -33,10 +33,10 @@
                 Government E-Invoicing, Handled Correctly the First Time
             </h2>
             <p style="font-size: 1.05rem; color: #475569; line-height: 1.75; margin-bottom: 1.2rem;">
-                Pakistan's digital invoicing mandates require every qualifying Customer Invoice to be reported to FBR and, for Punjab-registered sales, to PRA as well &mdash; in a specific JSON format, with specific field validation, and with specific rules about what a government system will and will not accept. A single malformed submission can mean a rejected invoice, a blocked delivery, or a compliance gap that surfaces months later during an audit.
+                Pakistan's digital invoicing mandates require every qualifying Customer Invoice to be reported to FBR and, for Punjab-registered sales, to PRA as well in a specific JSON format, with specific field validation, and with specific rules about what a government system will and will not accept. A single malformed submission can mean a rejected invoice, a blocked delivery, or a compliance gap that surfaces months later during an audit.
             </p>
             <p style="font-size: 1.05rem; color: #475569; line-height: 1.75; margin-bottom: 1.2rem;">
-                This module connects your existing Odoo Sales, Accounting, and Point of Sale data to both authorities automatically. It checks every required field before an invoice is even allowed to post, builds the exact payload each authority expects, submits it, and reads back the real result &mdash; not just an HTTP status code, but the authority's own acceptance or rejection message.
+                This module connects your existing Odoo Sales, Accounting, and Point of Sale data to both authorities automatically. It checks every required field before an invoice is even allowed to post, builds the exact payload each authority expects, submits it, and reads back the real result not just an HTTP status code, but the authority's own acceptance or rejection message.
             </p>
             <p style="font-size: 1.05rem; color: #000000; line-height: 1.75; font-weight: 600; border-left: 4px solid #81BD41; padding-left: 1rem; margin-bottom: 0;">
                 The result is a Customer Invoice workflow your sales and accounting teams already know, with Pakistan e-invoicing compliance running underneath it instead of alongside it.
@@ -62,21 +62,21 @@
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 4px solid #81BD41; border-radius: 8px; padding: 2rem; height: 100%;">
                     <div style="color: #81BD41; font-size: 2rem; font-weight: 800; margin-bottom: 0.8rem;">01</div>
                     <h3 style="color: #000000; font-size: 1.25rem; font-weight: 700;">Automatic Routing by Province</h3>
-                    <p style="color: #475569; line-height: 1.7; margin: 0;">The buyer's province, compared against your company's configured FBR and PRA settings, determines automatically which authority (or both, or neither) an invoice is eligible for &mdash; no manual switch to remember.</p>
+                    <p style="color: #475569; line-height: 1.7; margin: 0;">The buyer's province, compared against your company's configured FBR and PRA settings, determines automatically which authority (or both, or neither) an invoice is eligible for no manual switch to remember.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6" style="padding: 0.75rem;">
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 4px solid #81BD41; border-radius: 8px; padding: 2rem; height: 100%;">
                     <div style="color: #81BD41; font-size: 2rem; font-weight: 800; margin-bottom: 0.8rem;">02</div>
                     <h3 style="color: #000000; font-size: 1.25rem; font-weight: 700;">Nothing Bad Reaches the Government</h3>
-                    <p style="color: #475569; line-height: 1.7; margin: 0;">Seller/buyer province, company Tax ID, and every invoice line's HS Code, Sale Type, and tax are checked before posting is even allowed &mdash; so a government rejection becomes the exception, not routine.</p>
+                    <p style="color: #475569; line-height: 1.7; margin: 0;">Seller/buyer province, company Tax ID, and every invoice line's HS Code, Sale Type, and tax are checked before posting is even allowed so a government rejection becomes the exception, not routine.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6" style="padding: 0.75rem;">
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 4px solid #81BD41; border-radius: 8px; padding: 2rem; height: 100%;">
                     <div style="color: #81BD41; font-size: 2rem; font-weight: 800; margin-bottom: 0.8rem;">03</div>
                     <h3 style="color: #000000; font-size: 1.25rem; font-weight: 700;">Set Up Once, Per Company</h3>
-                    <p style="color: #475569; line-height: 1.7; margin: 0;">Installing the module provisions the Pakistan tax accounts, province tax rates, fiscal positions, and withholding categories a Pakistani company needs &mdash; idempotently, so re-running it never creates duplicates.</p>
+                    <p style="color: #475569; line-height: 1.7; margin: 0;">Installing the module provisions the Pakistan tax accounts, province tax rates, fiscal positions, and withholding categories a Pakistani company needs idempotently, so re-running it never creates duplicates.</p>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
             On every Pakistani company's <strong style="color: #000000;">FBR</strong> and <strong style="color: #000000;">ePRA</strong> tabs, set Sandbox Testing or Production mode, the API endpoint and authorization token (FBR), the PRA POS ID (PRA), and the company's own province. Each company is configured independently.
         </p>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin: 0;">
-            Saving these settings &mdash; or simply enabling FBR/PRA for the first time &mdash; automatically runs the Pakistan Chart of Accounts setup described above for that company.
+            Saving these settings or simply enabling FBR/PRA for the first time automatically runs the Pakistan Chart of Accounts setup described above for that company.
         </p>
     </div>
 
@@ -107,10 +107,10 @@
         <div style="color: #81BD41; font-size: 0.85rem; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 0.6rem;">STEP 02</div>
         <h3 style="color: #000000; font-weight: 700; font-size: 1.5rem; margin: 0 0 1rem 0;">Tag Products and Customers Once</h3>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin-bottom: 1rem;">
-            Each product gets an <strong style="color: #000000;">HS Code</strong>, an <strong style="color: #000000;">FBR Sale Type</strong> (28 official FBR scenarios ship pre-loaded), and optionally a <strong style="color: #000000;">PRA PCT Code</strong> &mdash; synced on demand from FBR's own live reference API, over 7,800 codes, with a single click. Each customer gets a province and, when registered, an NTN/STN or CNIC.
+            Each product gets an <strong style="color: #000000;">HS Code</strong>, an <strong style="color: #000000;">FBR Sale Type</strong> (28 official FBR scenarios ship pre-loaded), and optionally a <strong style="color: #000000;">PRA PCT Code</strong> synced on demand from FBR's own live reference API, over 7,800 codes, with a single click. Each customer gets a province and, when registered, an NTN/STN or CNIC.
         </p>
         <div style="background: #f1f5f9; border-left: 4px solid #81BD41; padding: 1.2rem 1.4rem; color: #475569; line-height: 1.7;">
-            <strong style="color: #000000;">Tag it once on the product or customer record</strong> and every future invoice line inherits it automatically &mdash; no repeated data entry per invoice.
+            <strong style="color: #000000;">Tag it once on the product or customer record</strong> and every future invoice line inherits it automatically no repeated data entry per invoice.
         </div>
     </div>
 
@@ -118,7 +118,7 @@
         <div style="color: #81BD41; font-size: 0.85rem; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 0.6rem;">STEP 03</div>
         <h3 style="color: #000000; font-weight: 700; font-size: 1.5rem; margin: 0 0 1rem 0;">Post the Invoice, Then Submit</h3>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin-bottom: 1rem;">
-            Confirming a Customer Invoice runs the full FBR/PRA validation and, when either authority applies, forces the posting date to today (a genuine FBR/PRA same-day-filing requirement, not an Odoo default). <strong style="color: #000000;">Post to FBR</strong> and <strong style="color: #000000;">Post to PRA</strong> buttons appear on posted, eligible invoices &mdash; or submit many at once from the Customer Invoices list with the bulk <strong style="color: #000000;">Submit to FBR</strong> / <strong style="color: #000000;">Submit to PRA</strong> actions.
+            Confirming a Customer Invoice runs the full FBR/PRA validation and, when either authority applies, forces the posting date to today (a genuine FBR/PRA same-day-filing requirement, not an Odoo default). <strong style="color: #000000;">Post to FBR</strong> and <strong style="color: #000000;">Post to PRA</strong> buttons appear on posted, eligible invoices or submit many at once from the Customer Invoices list with the bulk <strong style="color: #000000;">Submit to FBR</strong> / <strong style="color: #000000;">Submit to PRA</strong> actions.
         </p>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin: 0;">
             Point of Sale invoices are the one exception: they submit to FBR automatically the moment they post, with no button to click.
@@ -129,10 +129,10 @@
         <div style="color: #81BD41; font-size: 0.85rem; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 0.6rem;">STEP 04</div>
         <h3 style="color: #000000; font-weight: 700; font-size: 1.5rem; margin: 0 0 1rem 0;">A Queue That Doesn't Overwhelm the Government API</h3>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin-bottom: 1rem;">
-            Every submission goes through a shared FBR/PRA queue that processes <strong style="color: #000000;">one request at a time, in order</strong> &mdash; deliberately, since both authorities' APIs are rate-sensitive government systems, not something to hit with concurrent requests. Network errors and transient failures retry automatically (up to five attempts); a scheduled job sweeps every 15 minutes to recover anything stuck or due for retry.
+            Every submission goes through a shared FBR/PRA queue that processes <strong style="color: #000000;">one request at a time, in order</strong> deliberately, since both authorities' APIs are rate-sensitive government systems, not something to hit with concurrent requests. Network errors and transient failures retry automatically (up to five attempts); a scheduled job sweeps every 15 minutes to recover anything stuck or due for retry.
         </p>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin: 0;">
-            Business rejections &mdash; the authority telling you the data itself is wrong &mdash; are never silently retried; they surface immediately so you can fix the actual problem.
+            Business rejections the authority telling you the data itself is wrong are never silently retried; they surface immediately so you can fix the actual problem.
         </p>
     </div>
 
@@ -140,68 +140,11 @@
         <div style="color: #81BD41; font-size: 0.85rem; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 0.6rem;">STEP 05</div>
         <h3 style="color: #000000; font-weight: 700; font-size: 1.5rem; margin: 0 0 1rem 0;">Every Attempt Is Logged, Nothing Is a Black Box</h3>
         <p style="color: #475569; font-size: 1.02rem; line-height: 1.75; margin-bottom: 1.2rem;">
-            Every submission &mdash; successful or not &mdash; is recorded with the exact request payload, the exact response the authority sent back, and a plain-language result posted straight to the invoice's own chatter. Once FBR or PRA accepts an invoice, its own compliant print report becomes available, carrying the government-issued invoice number and a QR code.
+            Every submission successful or not is recorded with the exact request payload, the exact response the authority sent back, and a plain-language result posted straight to the invoice's own chatter. Once FBR or PRA accepts an invoice, its own compliant print report becomes available, carrying the government-issued invoice number and a QR code.
         </p>
         <div style="background: #000000; padding: 1.5rem; border-radius: 6px; color: #ffffff; max-width: 780px; margin: 0 auto; text-align: center; border-left: 4px solid #81BD41;">
             <div style="color: #81BD41; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">WHAT COUNTS AS SUCCESS</div>
-            <strong style="font-size: 1rem; color: #000000;">A 200 OK from the API is not acceptance. Only the authority's own "Valid" / "Code 100" response is.</strong>
-        </div>
-    </div>
-</section>
-
-<!-- Screenshot Walkthrough -->
-<section class="oe_container" style="background-color: #f8fafc; padding: 5rem 2rem; font-family: 'Poppins','Century Gothic','Trebuchet MS',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;">
-    <div style="max-width: 1000px; margin: 0 auto;">
-        <div class="oe_row" style="text-align: center; margin-bottom: 3rem;">
-            <div class="col-12">
-                <h2 style="color: #000000; font-size: 2.1rem; font-weight: 700; margin-bottom: 0.7rem;">See It In Action</h2>
-                <p style="color: #64748b; font-size: 1.1rem;">The same workflow from configuration through to a government-accepted invoice.</p>
-            </div>
-        </div>
-
-        <div class="oe_row" style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <div style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: #81BD41; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">1</div>
-            <div style="flex: 1; min-width: 0;">
-                <h3 style="color: #000000; font-size: 1.2rem; font-weight: 700; margin: 0.3rem 0 0.8rem 0;">Tag a Customer for FBR / PRA</h3>
-                <p style="color: #475569; line-height: 1.7; margin: 0 0 1rem 0;">The customer's "FBR / PRA" tab: customer category, buyer province, and contact person, filled in once per customer.</p>
-                <img src="screenshots/01_Company.png" alt="Customer form FBR/PRA tab showing category, province, and contact person" style="width: 100%; max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #e2e8f0; display: block;"/>
-            </div>
-        </div>
-
-        <div class="oe_row" style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <div style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: #81BD41; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">2</div>
-            <div style="flex: 1; min-width: 0;">
-                <h3 style="color: #000000; font-size: 1.2rem; font-weight: 700; margin: 0.3rem 0 0.8rem 0;">Tag a Product's Tax Classification</h3>
-                <p style="color: #475569; line-height: 1.7; margin: 0 0 1rem 0;">The product's own "FBR / PRA" tab: HS Code, FBR Sale Type, and PRA PCT Code, set once per product.</p>
-                <img src="screenshots/02_Item.png" alt="Product form FBR/PRA tab showing HS Code, FBR Sale Type, and PRA PCT Code" style="width: 100%; max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #e2e8f0; display: block;"/>
-            </div>
-        </div>
-
-        <div class="oe_row" style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <div style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: #81BD41; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">3</div>
-            <div style="flex: 1; min-width: 0;">
-                <h3 style="color: #000000; font-size: 1.2rem; font-weight: 700; margin: 0.3rem 0 0.8rem 0;">Submit and Watch the Audit Trail</h3>
-                <p style="color: #475569; line-height: 1.7; margin: 0 0 1rem 0;">A posted Customer Invoice with its Post to FBR / Post to PRA buttons, both already submitted, and the full request/response JSON logged straight to the chatter on the right.</p>
-                <img src="screenshots/03_CustomerInvoice.png" alt="Posted invoice with FBR/PRA tab and chatter showing full submission JSON" style="width: 100%; max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #e2e8f0; display: block;"/>
-            </div>
-        </div>
-
-        <div class="oe_row" style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <div style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: #81BD41; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">4</div>
-            <div style="flex: 1; min-width: 0;">
-                <h3 style="color: #000000; font-size: 1.2rem; font-weight: 700; margin: 0.3rem 0 0.8rem 0;">Real-Time Status, Straight From FBR</h3>
-                <p style="color: #475569; line-height: 1.7; margin: 0 0 1rem 0;">FBR Status reads <strong style="color:#000000;">Valid</strong>, with the government-issued FBR Invoice Number and the complete response payload stored on the invoice.</p>
-                <img src="screenshots/04_InvoiceStatus.png" alt="Invoice FBR/PRA tab showing Valid status, FBR invoice number, and response JSON" style="width: 100%; max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #e2e8f0; display: block;"/>
-            </div>
-        </div>
-
-        <div class="oe_row" style="display: flex; align-items: flex-start; gap: 1.5rem; background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <div style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: #81BD41; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">5</div>
-            <div style="flex: 1; min-width: 0;">
-                <h3 style="color: #000000; font-size: 1.2rem; font-weight: 700; margin: 0.3rem 0 0.8rem 0;">A Compliant, QR-Coded Invoice</h3>
-                <p style="color: #475569; line-height: 1.7; margin: 0 0 1rem 0;">The printed FBR Digital Invoice report: the official invoice number, HS Codes and tax breakdown per line, and a scannable QR code.</p>
-                <img src="screenshots/05_InvoicewithQRCode.png" alt="Printed FBR Digital Invoice report with QR code" style="width: 100%; max-width: 420px; height: auto; border-radius: 6px; border: 1px solid #e2e8f0; display: block;"/>
-            </div>
+            <strong style="font-size: 1rem; color: #f5f3f3;">A 200 OK from the API is not acceptance. Only the authority's own "Valid" / "Code 100" response is.</strong>
         </div>
     </div>
 </section>
@@ -223,7 +166,7 @@
                 <div style="background: #f8fafc; padding: 1.2rem; text-align: center; border-radius: 6px;"><strong style="display: block; color: #81BD41; font-size: 1.5rem;">8471.3010</strong>Product HS Code</div>
                 <div style="background: #f8fafc; padding: 1.2rem; text-align: center; border-radius: 6px;"><strong style="display: block; color: #81BD41; font-size: 1.5rem;">18%</strong>Line Tax Rate</div>
             </div>
-            <p style="line-height: 1.75; margin-bottom: 0.7rem;"><strong style="color: #000000;">Validated before posting:</strong> seller province, buyer province, company NTN format, and every line's HS Code, Sale Type, and tax &mdash; all present and correctly formatted.</p>
+            <p style="line-height: 1.75; margin-bottom: 0.7rem;"><strong style="color: #000000;">Validated before posting:</strong> seller province, buyer province, company NTN format, and every line's HS Code, Sale Type, and tax all present and correctly formatted.</p>
             <p style="line-height: 1.75; margin-bottom: 0.7rem;"><strong style="color: #000000;">Submitted:</strong> the module builds FBR's JSON payload, resolves the correct sandbox scenario ID from the product's Sale Type, and posts it with the company's configured token.</p>
             <p style="line-height: 1.75; margin: 0;"><strong style="color: #000000;">Result:</strong> FBR responds <span style="color: #81BD41; font-weight: 800;">Valid</span>, the invoice is stamped with FBR's own invoice number, and the QR-coded print report becomes available immediately.</p>
         </div>
@@ -250,12 +193,99 @@
             <ul style="list-style: none; padding: 0; margin: 0; color: #475569;">
                 <li style="margin-bottom: 1.3rem; display: flex; align-items: flex-start;"><span style="color: #81BD41; margin-right: 0.8rem; font-weight: bold;">&#10003;</span><span><strong style="color: #000000;">Single-Flight Retry Queue:</strong> strictly sequential processing with automatic recovery of stuck or failed attempts.</span></li>
                 <li style="margin-bottom: 1.3rem; display: flex; align-items: flex-start;"><span style="color: #81BD41; margin-right: 0.8rem; font-weight: bold;">&#10003;</span><span><strong style="color: #000000;">Full Audit Trail:</strong> every request and response stored and viewable, with results posted to the invoice's own chatter.</span></li>
-                <li style="margin-bottom: 1.3rem; display: flex; align-items: flex-start;"><span style="color: #81BD41; margin-right: 0.8rem; font-weight: bold;">&#10003;</span><span><strong style="color: #000000;">Live PCT Code Master Data:</strong> synced on demand directly from FBR's own reference API &mdash; over 7,800 codes.</span></li>
+                <li style="margin-bottom: 1.3rem; display: flex; align-items: flex-start;"><span style="color: #81BD41; margin-right: 0.8rem; font-weight: bold;">&#10003;</span><span><strong style="color: #000000;">Live PCT Code Master Data:</strong> synced on demand directly from FBR's own reference API over 7,800 codes.</span></li>
                 <li style="margin-bottom: 1.3rem; display: flex; align-items: flex-start;"><span style="color: #81BD41; margin-right: 0.8rem; font-weight: bold;">&#10003;</span><span><strong style="color: #000000;">Automatic Pakistan CoA Setup:</strong> tax accounts, province tax rates, fiscal positions, and withholding categories, created on install.</span></li>
             </ul>
         </div>
     </div>
 </section>
+<!-- Screenshot Walkthrough -->
+<section class="oe_container" style="background-color: #f8fafc; padding: 5rem 2rem; font-family: 'Poppins','Century Gothic','Trebuchet MS',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;">
+    <div style="max-width: 1150px; margin: 0 auto;">
+        <div class="oe_row" style="text-align: center; margin-bottom: 4rem;">
+            <div class="col-12">
+                <span style="display: inline-block; color: #81BD41; font-size: 0.85rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.7rem;">Visual Product Tour</span>
+            </div>
+        </div>
+
+        <!-- Screenshot 01 -->
+        <div class="oe_row" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2.5rem; margin-bottom: 3rem; box-shadow: 0 6px 18px rgba(0,0,0,0.04);">
+            <div class="col-12" style="margin-bottom: 1.7rem;">
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="display: inline-block; min-width: 46px; height: 46px; line-height: 46px; text-align: center; background: #81BD41; color: #000000; border-radius: 50%; font-size: 1rem; font-weight: 800; margin-right: 1rem;">01</span>
+                    <div>
+                        <h3 style="color: #000000; font-size: 1.5rem; font-weight: 700; margin: 0 0 0.55rem 0;">Customer Setup Province-Wise Applicable Taxes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background: #000000; padding: 10px; border-radius: 8px; text-align: center;">
+                <img src="screenshots/01_Company.png" alt="Customer Setup Province-Wise Applicable Taxes" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto; border-radius: 5px;"/>
+            </div>
+        </div>
+
+        <!-- Screenshot 02 -->
+        <div class="oe_row" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2.5rem; margin-bottom: 3rem; box-shadow: 0 6px 18px rgba(0,0,0,0.04);">
+            <div class="col-12" style="margin-bottom: 1.7rem;">
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="display: inline-block; min-width: 46px; height: 46px; line-height: 46px; text-align: center; background: #81BD41; color: #000000; border-radius: 50%; font-size: 1rem; font-weight: 800; margin-right: 1rem;">02</span>
+                    <div>
+                        <h3 style="color: #000000; font-size: 1.5rem; font-weight: 700; margin: 0 0 0.55rem 0;">Item Setup – HS Code Configuration for FBR/PRA Compliance</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background: #000000; padding: 10px; border-radius: 8px; text-align: center;">
+                <img src="screenshots/02_Item.png" alt="Item Setup – HS Code Configuration for FBR/PRA Compliance" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto; border-radius: 5px;"/>
+            </div>
+        </div>
+
+        <!-- Screenshot 03 -->
+        <div class="oe_row" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2.5rem; margin-bottom: 3rem; box-shadow: 0 6px 18px rgba(0,0,0,0.04);">
+            <div class="col-12" style="margin-bottom: 1.7rem;">
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="display: inline-block; min-width: 46px; height: 46px; line-height: 46px; text-align: center; background: #81BD41; color: #000000; border-radius: 50%; font-size: 1rem; font-weight: 800; margin-right: 1rem;">03</span>
+                    <div>
+                        <h3 style="color: #000000; font-size: 1.5rem; font-weight: 700; margin: 0 0 0.55rem 0;">Invoice Submission Error Log</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background: #000000; padding: 10px; border-radius: 8px; text-align: center;">
+                <img src="screenshots/03_CustomerInvoice.png" alt="Invoice Submission Error Log" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto; border-radius: 5px;"/>
+            </div>
+        </div>
+
+        <!-- Screenshot 04 -->
+        <div class="oe_row" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2.5rem; margin-bottom: 3rem; box-shadow: 0 6px 18px rgba(0,0,0,0.04);">
+            <div class="col-12" style="margin-bottom: 1.7rem;">
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="display: inline-block; min-width: 46px; height: 46px; line-height: 46px; text-align: center; background: #81BD41; color: #000000; border-radius: 50%; font-size: 1rem; font-weight: 800; margin-right: 1rem;">04</span>
+                    <div>
+                        <h3 style="color: #000000; font-size: 1.5rem; font-weight: 700; margin: 0 0 0.55rem 0;">FBR/PRA Invoice Verification Status</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background: #000000; padding: 10px; border-radius: 8px; text-align: center;">
+                <img src="screenshots/04_InvoiceStatus.png" alt="FBR/PRA Invoice Verification Status" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto; border-radius: 5px;"/>
+            </div>
+        </div>
+
+        <!-- Screenshot 05 -->
+        <div class="oe_row" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2.5rem; box-shadow: 0 6px 18px rgba(0,0,0,0.04);">
+            <div class="col-12" style="margin-bottom: 1.7rem;">
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="display: inline-block; min-width: 46px; height: 46px; line-height: 46px; text-align: center; background: #81BD41; color: #000000; border-radius: 50%; font-size: 1rem; font-weight: 800; margin-right: 1rem;">05</span>
+                    <div>
+                        <h3 style="color: #000000; font-size: 1.5rem; font-weight: 700; margin: 0 0 0.55rem 0;">QR Code Generated Sales Invoice</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background: #000000; padding: 10px; border-radius: 8px; text-align: center;">
+                <img src="screenshots/05_InvoicewithQRCode.png" alt="QR Code Generated Sales Invoice" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto; border-radius: 5px;"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Important notes -->
 <section class="oe_container" style="background-color: #f8fafc; padding: 4.5rem 2rem; font-family: 'Poppins','Century Gothic','Trebuchet MS',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;">
@@ -266,7 +296,7 @@
                 This module ports the logic of the widely-used ERPNext "Pak Compliance" app to Odoo 18, adapted to Odoo's own accounting and tax engine rather than translated line by line. It depends only on Odoo's standard <code>account</code>, <code>l10n_pk</code>, and <code>point_of_sale</code> apps.
             </p>
             <p style="color: #475569; line-height: 1.75;">
-                HS Codes, PRA PCT Codes, and FBR Sale Type scenarios assigned to your real products should be verified against the actual Pakistan Customs Tariff and your own tax treatment by whoever handles your company's tax compliance &mdash; this module gets the structure, validation, and submission mechanics right; the correct classification for your specific goods and services is a business decision, not something software should guess silently.
+                HS Codes, PRA PCT Codes, and FBR Sale Type scenarios assigned to your real products should be verified against the actual Pakistan Customs Tariff and your own tax treatment by whoever handles your company's tax compliance this module gets the structure, validation, and submission mechanics right; the correct classification for your specific goods and services is a business decision, not something software should guess silently.
             </p>
             <p style="color: #475569; line-height: 1.75; margin-bottom: 0;">
                 Test thoroughly in Sandbox Testing mode against real product and customer data before switching any company to Production.
@@ -280,9 +310,8 @@
     <div style="max-width: 1050px; margin: 0 auto;">
         <div class="oe_row" style="text-align: center; margin-bottom: 3rem;">
             <div class="col-12">
-                <img src="ddlogo.png" alt="DeliveryDevs" style="height: 42px; width: auto; display: block; margin: 0 auto 1.2rem auto;"/>
                 <span style="display: inline-block; color: #81BD41; font-size: 0.85rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.7rem;">Developed by</span>
-                <h2 style="color: #000000; font-size: 2.1rem; font-weight: 700; margin-bottom: 1rem;">DeliveryDevs &mdash; Your Technology Partner for Reliable Business Solutions</h2>
+                <h2 style="color: #000000; font-size: 2.1rem; font-weight: 700; margin-bottom: 1rem;">DeliveryDevs Your Technology Partner for Reliable Business Solutions</h2>
                 <p style="color: #475569; font-size: 1.05rem; line-height: 1.75; max-width: 850px; margin: 0 auto;">
                     DeliveryDevs is a global software development company that builds practical digital products and essential business technologies. Our team helps organizations improve daily operations through dependable software, thoughtful implementation, and solutions designed around real business needs.
                 </p>
