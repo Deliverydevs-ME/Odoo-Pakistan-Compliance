@@ -21,6 +21,7 @@ Ported from the ERPNext "Pak Compliance" app (fbr_e_invoicing).
         "l10n_pk",
         "point_of_sale",
     ],
+    'images': ['static/description/banner.gif'],
     "data": [
         "security/security.xml",
         "security/ir.model.access.csv",
